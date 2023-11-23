@@ -1,0 +1,31 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	int year;
+	double salary, increment, bonus, salary_increment = .05, bonus_percentage = .02;
+	char rating;
+	cout << "Enter the Current Salary of the Employee: ";
+	cin >> salary;
+	cout << "Enter the Number of Year: ";
+	cin >> year;
+	for (int year = 1; year <= year; year++)
+	{
+		increment = salary * salary_increment;
+		salary += increment;
+
+		cout << "Enter the Rating of the Employee: ";
+		cin >> rating;
+		if (rating == 'E' || rating == 'e')                                      // "E" or "e" for Exceptional
+		{
+			bonus = salary * bonus_percentage;
+			salary += bonus;
+			cout << "Exceptional Rating of " << year << " Year and Salary is after ammendemnts is: " << salary << endl;
+		}
+		else
+		{
+			cout << "Salary of year " << year << " without Exceptional is: " << salary << endl;
+		}
+		return 0;
+	}
+}
